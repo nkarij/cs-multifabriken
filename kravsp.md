@@ -12,12 +12,12 @@ Menu-valg:
 2: produkt 2
 3: produkt 3
 4: produkt 4
-2: vis en liste med valgte produkter.
-3: logge ud.
+2: print en liste med valgte produkter.
+3: lukke ned.
 
 Super class:
 Kategory:
-    name
+    Type
     list?
 
 Subclasses:

@@ -11,15 +11,15 @@ namespace cs_multifabriken1 {
         public string model;
         public string color;
 
-        // public List<object> carList = new List<object>();
-
         public Carv1(){
             // type inherited from productType
             this.type = "Car";
         }
 
         // methods:
-        public void AddLicense(string license) {
+        public void AddLicense() {
+            System.Console.WriteLine("Type License number:");
+            string license = Console.ReadLine();
             this.licenseNumber = license;
         }
 
@@ -35,6 +35,19 @@ namespace cs_multifabriken1 {
             this.model = model;
         }
 
+        // public void AddToList(Carv1 car) {
+        //     carList.Add(car);
+        // }
+
+        // public void PrintList(){
+        //     foreach (var car in carList)
+        //     {   
+        //         Console.WriteLine("Produkt:{0}", car.type);
+        //         Console.WriteLine("License:{0}", car.licenseNumber);
+        //         Console.WriteLine("Model:{0}", car.model);
+        //         Console.WriteLine("Color:{0}", car.color);
+        //     }
+        // }
     }
 
 }
